@@ -1,0 +1,5 @@
+## Hierarchical Text Summarization
+Adapted from the original repository: https://github.com/lipiji/hierarchical-encoder-decoder
+
+### References
+- Li, Jiwei, Minh-Thang Luong, and Dan Jurafsky. "A hierarchical neural autoencoder for paragraphs and documents." arXiv preprint arXiv:1506.01057 (2015).
