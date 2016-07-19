@@ -54,7 +54,7 @@ class RNN:
 		self.params += sent_decoder_layer.params
 
 		# Word Decoder
-		sent_codes = sent_decoder_layer.activation
+		sents_codes = sent_decoder_layer.activation
 		sents_codes = T.reshape(sents_codes, (1, self.mask_Y.shape[1] * sent_decoder_layer.out_size))
 		word_decoder_layer = WordDecoderLayer(self.cell, random_generator, str(i+3), (sent_decoder_layer.out_size, self.out_size), sent_codes, self.mask_Y, self.is_train, self.drop_rate)
 		self.layers.append(word_decoder_layer)
